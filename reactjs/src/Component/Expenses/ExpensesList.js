@@ -1,10 +1,10 @@
 import React from 'react';
 import ExpenseItem from './ExpenseItem';
-import "./ExpensesList.css";
+import "./ExpenseList.css";
 
 const ExpensesList = (props) => {
     if(props.items.length === 0){
-        return <h2 className='expense-list_fallback'>Found no expanses.</h2>;
+        return <h1 className='expense-list_fallback'> No expanses Found !</h1>;
     }
     return(
         <ul className='expense-list'>

@@ -6,7 +6,7 @@ import ExpenseFilter from "./ExpenseFilter";
 import "./Expenses.css"
 
 const Expenses=(props)=> {
-const [filteredYear , setFilteredYear] =useState("2022");
+const [filteredYear , setFilteredYear] =useState("2020");
 
 const filterChangeHandler = (selectedYear) => {
   setFilteredYear(selectedYear);
@@ -23,14 +23,14 @@ const filteredExpenses = props.items.filter((expense) => {
       selected = {filteredYear}
       onChangeFilter={filterChangeHandler}
        />
-       <ExpensesChart Expenses = {filteredExpenses}/>
-       <ExpensesList items = {filteredYear}/>
+       <ExpensesChart expenses = {filteredExpenses}/>
+       <ExpensesList items = {filteredExpenses}/>
        </Card>
     </div>
   );
 };
 
-    {/* <ExpenseItem 
+    /* <ExpenseItem 
      title= {props.items[0].title}
      amount= {props.items[0].amount}
      date= {props.items[0].date}
@@ -50,11 +50,11 @@ const filteredExpenses = props.items.filter((expense) => {
     <ExpenseItem title= {props.items[4].title}
      amount= {props.items[4].amount} 
      date= {props.items[4].date}
-     />    */}
+     />    */
     
 
-      {/* {/* <ExpenseChart expenses={filteredExpenses}/>
-      <ExpenseList items={filteredExpenses}/> */}
+      /* {/* <ExpenseChart expenses={filteredExpenses}/>
+      <ExpenseList items={filteredExpenses}/> */
       // {filteredExpenses.length=== 0 && <p className="para">No Result Found !</p>}
       // {filteredExpenses.length>0 &&
       // filteredExpenses.map((expense)=> (

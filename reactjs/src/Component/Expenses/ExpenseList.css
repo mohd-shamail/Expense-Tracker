@@ -2,8 +2,9 @@
     list-style: none;
     padding: 0;
 }
-
-.expense-list_falback {
+.expense-list_fallback{
     color: white;
     text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
