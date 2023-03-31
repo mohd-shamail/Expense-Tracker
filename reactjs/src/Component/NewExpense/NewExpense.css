@@ -19,6 +19,7 @@
     color: white;
     text-align: center;
     font-size: 1.2rem;
+    margin: 5px;
 }
 .new-expense button:hover ,
 .new-expense button:active {
